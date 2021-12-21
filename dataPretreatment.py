@@ -18,7 +18,6 @@ print(fish_data)
 print(type(fish_target))
 
 train_input, test_input, train_target, test_target = trainSplit(fish_data, fish_target, stratify=fish_target, random_state=42)
-print(train_input)
 kn = KNeighborsClassifier()
 kn = kn.fit(train_input, train_target)
 print(kn.score(test_input, test_target))

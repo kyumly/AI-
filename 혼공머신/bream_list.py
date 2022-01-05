@@ -42,5 +42,4 @@ kn49 = KNeighborsClassifier(n_neighbors=49)
 kn49.fit(fish_data, fish_target)
 print(kn49.score(fish_data, fish_target))
 
-
 plt.show()
